@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Google Drive Download URL Generator</title>
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<p style="text-align:center">
+          <input type="text" class="form-control" id="driveID" placeholder="Put Google Drive ID Here" />
+        </div>
+      </form>
+     <p style="text-align:center"> <div class="get">
+        <button class="btn btn-primary" id="get-button" type="submit" onclick='getLink()'>Generate Download URL</button>
+      </div>
+
+      <div id="container">
+        <h3><b>Result:</b></h3>
+        <div id="link_container" data-toggle="tooltip" data-placement="top" title="Click then CTRL + C"></div>
+        <button type="button" class="btn btn-danger get-another" onClick="window.location.href=window.location.href">Generate Another Link</button>
+      </div>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/download_link.js"></script>
+</body>
+</html>
