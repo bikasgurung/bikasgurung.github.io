@@ -42,7 +42,7 @@ blockquote footer {
 }
 
 .container {
-	max-height:800px;
+	max-height:100%;
 	margin: 10% auto auto auto;
 }
 .quotebox {
