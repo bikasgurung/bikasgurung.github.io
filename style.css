@@ -36,7 +36,7 @@ blockquote h1, h2, h3, p{
   display: inline;
 }
 blockquote footer {
-	font-size:18px;
+	font-size:10px;
 	text-align:right;
 	color:transparent;
 }
