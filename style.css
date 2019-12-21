@@ -69,9 +69,9 @@ blockquote footer {
 }
 .social-icons .fa {
 	font-size: 1.8em;
-	width: 40px;
-	height: 40px;
-	line-height: 40px;
+	width: 10px;
+	height: 10px;
+	line-height: 10px;
 	text-align: center;
 	color: #FFF;
 	-webkit-transition: all 0.3s ease-in-out;
@@ -102,9 +102,9 @@ blockquote footer {
 
 @media only screen and (max-width: 100%){  
     #quotetext {font-size:15px; }
-	.container {	margin-right:15px;}
+	.container {	margin-right:1px;}
     }
 @media only screen and (max-width: 300px){  
-    #quotetext {font-size:15px; }
+    #quotetext {font-size:12px; }
 
     }
