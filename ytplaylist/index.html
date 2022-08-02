@@ -1,11 +1,13 @@
-<section class="parent-container">
+
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/bikasgurung/bikasgurung.github.io@master/ytplaylist/style.css" />
+
+  <section class="parent-container">
+
   <aside id="video-player">
     <!--  BEGIN PLAYER CONTAINER -->
 
     <!-- YouTube iFrame Embed -->
 
-    
     <iframe id="YouTube-Iframe" class="lazyload" src="https://www.youtube.com/embed/3YHVC1DcHmo?enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
     <!-- VIDEO CAPTION  -->
@@ -15,6 +17,27 @@
     <!-- BEGIN PLAYLIST CONTAINER  -->
 
     <div id="playlist">
+
+      <!-- BUTTON MARK-UP  
+
+ Button has two data-attribtes that update the
+ player when clicked.
+
+1.  data-iframe     = the url of the YouTube Video Embed
+2.  data-caption    = video caption
+
+YouTube URL/SRC must end with ?autoplay=1 for videos to autoplay.
+Data caption is HTML - convert double quotes to single quotes
+in data attribute mark-up - i.e. ' not " - Probably Need to format
+your caption markup too. lol
+
+Playlist buttom image is called from YouTube.  Uses the Video ID.
+
+EASY WAY - copy a button and change out the
+YouTube video ID with the new one and edit the caption.  Done!
+
+
+-->
 
       <button class="lazyload active" data-bg="//img.youtube.com/vi/3YHVC1DcHmo/sddefault.jpg" data-iframe="https://www.youtube.com/embed/3YHVC1DcHmo?autoplay=1" data-caption="Jon Batiste ♩  FREEDOM">Jon Batiste</button>
 
@@ -36,7 +59,11 @@
 
       <button class="lazyload" data-bg="//img.youtube.com/vi/89Lum1zkRuU/sddefault.jpg" data-iframe="https://www.youtube.com/embed/89Lum1zkRuU?autoplay=1" data-caption="Luke James x Nu Deco Ensemble ♩ reprise two">Luke James</button>
 
-    
+      <!-- CODPEN IFRAME EMBED 
+           As we are simply swapping out iframes, the player will work for
+           any iframe embed so lon as it fits the player container's 16/9 aspect ratio.
+-->
+
       <button class="lazyload" data-bg="https://assets.codepen.io/191814/palyer-codepen.jpg?width=300&height=216&format=auto" data-iframe="https://codepen.io/mark_sottek/embed/zYWKKmz?default-tab=result&theme-id=dark" data-caption="Oz Cylone ♩ Codepen Iframe Embed">Codepen</button>
 
     </div> <!-- // END PLAYLIST CONTAINER  -->
@@ -44,11 +71,8 @@
   </aside> <!--  // END PLAYER CONTAINER -->
   
   <!--  DEMO COPY  -->
-   <article>
-    
 
   </article>
 
-</section>
 
 <script src="//cdn.jsdelivr.net/gh/bikasgurung/bikasgurung.github.io@master/ytplaylist/script.js" type="text/javascript"></script>
