@@ -74,7 +74,7 @@ preferred font. */
   --caption-text-transform: uppercase; /* <--  uppercase - lowercase- normal - etc.*/
 
   /* FOR DEMO */
-  --parent-container-max-width: 1000px; /* <-- PLAY WITH ME */
+  --parent-container-max-width: 100%; /* <-- PLAY WITH ME */
 }
 
 
